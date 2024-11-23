@@ -24,6 +24,24 @@
 
        
     console.log('-----------------------------------')
+
+        /*function signature/sample */
+        const person = {
+            userName : 'mahfuzurrahman0012',
+            domainName : 'gmail.com'
+        }
+        function sendNotification(email) {
+
+            if(typeof email !== '@'){
+                return 'Invalid Email';
+            }
+
+
+            const result = email.userName + '@' + email.domainName;
+            return result;
+        }
+        console.log(sendNotification(person));
+       
         
 
 
