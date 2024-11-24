@@ -15,8 +15,7 @@
             }
 
             const monthlyIncome = income - expenses;
-            const twentyPersent = monthlyIncome * 20;
-            const tex = twentyPersent / 100
+            const tex = monthlyIncome * .20;
             return tex;
         }
         const result = calculateTax(10000, 3000);
@@ -26,21 +25,39 @@
     console.log('-----------------------------------')
 
         /*function signature/sample */
-        const person = {
-            userName : 'mahfuzurrahman0012',
-            domainName : 'gmail.com'
-        }
+        
         function sendNotification(email) {
 
-            if(typeof email !== '@'){
-                return 'Invalid Email';
-            }
+            // if(typeof email !== '@'){
+            //     return 'Invalid Email';
+            // }
 
-
-            const result = email.userName + '@' + email.domainName;
-            return result;
+            const userName = 'zihad.ph';
+            const domainName = 'gmail.com';
+            const email = userName + '@' + domainName; 
+            return email;
         }
-        console.log(sendNotification(person));
+        const email = sendNotification(email);
+
+
+
+        
+        function checkDigitsInName(name) {
+          
+        }
+
+
+        function calculateFinalScore(obj) {
+          //write your code here
+        }
+
+
+
+        function  waitingTime(waitingTimes  , serialNumber) {
+            const myObject = { name: "Rajib", testScore: 45,  schoolGrade: 25, isFFamily : true  }
+        }
+
+
        
         
 
