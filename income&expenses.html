@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>income, expenses</title>
+</head>
+<body>
+    <script>
+        function calculateTax(income, expenses) {
+
+            if(typeof income !== 'number' || income < expenses){
+                return 'Invalid Input';
+            }
+
+            const monthlyIncome = income - expenses;
+            const tex = monthlyIncome * .20;
+            return tex;
+        }
+        const result = calculateTax(5000, 1500);
+        console.log(result);
+    </script>
+</body>
+</html>

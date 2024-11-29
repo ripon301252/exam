@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+</head>
+<body>
+    <script>
+        const person = {
+            userName : 'zihad.ph',
+            domainName : 'gmail.com',
+        }
+        
+        function sendNotification(email) {
+
+            if(typeof email !== 'object'){
+                return 'Invalid Email';
+            }
+
+            
+            const result2 = email.userName + '@' + email.domainName; 
+            return result2
+        }
+        const email = sendNotification(person);
+        console.log(email);
+    </script>
+</body>
+</html>

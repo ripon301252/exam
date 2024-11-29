@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj</title>
+</head>
+<body>
+    <script>
+            const examResult = {
+            name : 'rajib',
+            testScore : 50,
+            schoolGrade : 30,
+            isFFamily : true
+            }
+
+
+        function calculateFinalScore(obj) {
+            if(typeof obj !== 'object'){
+                return 'Invalid Input';
+            }
+
+            if(obj.name !== 'string' && obj.testScore <= 50 && obj.schoolGrade <= 30 && obj.isFFamily === true){
+                return true;
+            }
+            else{
+                return false;
+            }
+            
+        }
+        const add = calculateFinalScore(examResult)
+        console.log(add);
+    </script>
+</body>
+</html>
+
+
