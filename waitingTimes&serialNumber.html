@@ -11,8 +11,7 @@
         
 
         function  waitingTime(waitingTimes  , serialNumber) {
-
-            if(typeof waitingTimes !== Array && serialNumber !== 'number'){
+            if(!Array.isArray(waitingTimes) && serialNumber !== 'number'){
                 return 'Invalid Input';
             }
 
@@ -25,19 +24,14 @@
             const fourPersonTime = fivePersonAvg * 4
             const ninePersonTime = sum + fourPersonTime;
             const ninepersonAvg = ninePersonTime / serial
-            return ninepersonAvg;
+            return Math.round(ninepersonAvg);
         }
         const numbers = [ 3, 5, 7, 11, 6];
         const serial = 10-1
-        const time = waitingTime(numbers, serial)
+        const time = waitingTime(7, 10)
         console.log(time);
         
-            // let sum = 0;
-            // for(const num of numbers){
-            //     const count = numbers.length
-            //     sum = sum + num;
-            //     const avg = sum / count
-            // }
+            
 
             
           
